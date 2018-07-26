@@ -347,6 +347,9 @@ vendor/lib/libmmcamera_s5k3p3sp.so|e49deb787fb7090cda7b0b0940af3c4de87941cd
 vendor/lib/libmmcamera_s5k3p8.so|11de89a1750dcf6e45ffc797044e6bdbd590d1f3
 vendor/lib/libmmcamera_s5k3p8sp.so|b279493bae590b6b5b27b89c7d3cc306619cf299
 
+# Camera isp
+vendor/lib/libmmcamera_isp_color_correct40.so
+
 # Camera isp - from A57
 vendor/lib/libmmcamera_isp_abf40.so|d15c61bef717917c74a7ba50b82ac6eff43dc5f7
 vendor/lib/libmmcamera_isp_bcc40.so|c4209d596631deb6d8d37827ae869751666e1c49
@@ -360,7 +363,6 @@ vendor/lib/libmmcamera_isp_chroma_suppress40.so|2a3cbd6cc288af2d1b40105b4fd474ef
 vendor/lib/libmmcamera_isp_clamp_encoder40.so|4ac646899c2d9cb2a66098e62a3c9b67add3adca
 vendor/lib/libmmcamera_isp_clamp_video40.so|1fa44e7a89c90e40cd3aa5222b34149ebb84b0c7
 vendor/lib/libmmcamera_isp_clamp_viewfinder40.so|0e3a8968b05f57aa08ecf26bdbc2e0b2991f1701
-vendor/lib/libmmcamera_isp_color_correct40.so|654fed1cede0c796a155485731695915151a31e2
 vendor/lib/libmmcamera_isp_color_xform_encoder40.so|256e74bc6ff4a514a24977ea62a495655d361c2d
 vendor/lib/libmmcamera_isp_color_xform_viewfinder40.so|a39ea245a5d7464bc0dde8271556657af32ff84c
 vendor/lib/libmmcamera_isp_cs_stats44.so|311e3923210960e108e4327d7a9261e5fbb9fa08
