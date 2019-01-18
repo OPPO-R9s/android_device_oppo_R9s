@@ -15,6 +15,9 @@ TARGET_BOARD_PLATFORM := msm8953
 # Inherit from common device tree
 include device/oppo/thortanium-common/BoardConfigCommon.mk
 
+# Display
+TARGET_SCREEN_DENSITY := 400
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_oppo_R9s
 TARGET_RECOVERY_DEVICE_MODULES := init_oppo_R9s
