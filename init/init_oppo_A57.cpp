@@ -6,6 +6,7 @@
 
 #include <libinit_dalvik_heap.h>
 #include <libinit_oppo_version.h>
+#include <libinit_utils.h>
 #include <libinit_variant.h>
 
 #include "vendor_init.h"
@@ -80,6 +81,16 @@ static void determine_device() {
             }
             default:
                 LOG(ERROR) << "Unknown operator variant";
+                break;
+        }
+
+        switch (ReadPcbVersion()) {
+            case 10:
+            case 11:
+                property_override("ro.vendor.wlan_fw_variant", "16061_second");
+                break;
+            default:
+                property_override("ro.vendor.wlan_fw_variant", "16061");
                 break;
         }
     } else {
