@@ -5,6 +5,7 @@
  */
 
 #include <libinit_dalvik_heap.h>
+#include <libinit_oppo_version.h>
 #include <libinit_variant.h>
 
 #include "vendor_init.h"
@@ -45,20 +46,8 @@ static const variant_info_t cph1701fw_info = {
 };
 
 static void determine_device() {
-    std::string kPrjVersion, kOperatorName;
-    int prjVersion, operatorName = 0;
-
-    // Determine project version
-    ReadFileToString("/proc/oppoVersion/prjVersion", &kPrjVersion);
-    prjVersion = std::stoi(kPrjVersion);
-
-    // Determine operator name
-    ReadFileToString("/proc/oppoVersion/operatorName", &kOperatorName);
-    operatorName = std::stoi(kOperatorName);
-
-    // Match operator name
-    if (prjVersion == 16061) {
-        switch (operatorName) {
+    if (ReadProjectVersion() == 16061) {
+        switch (ReadOperatorName()) {
             /* CN V1 */
             case 8:
             /* CN V2 */
