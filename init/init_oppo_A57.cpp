@@ -26,6 +26,16 @@ static const variant_info_t a57_info = {
     .build_ota = "A57_11.A.32_0320_201912050917",
 };
 
+static const variant_info_t a57t_info = {
+    .brand = "OPPO",
+    .device = "A57",
+    .marketname = "OPPO A57t",
+    .model = "OPPO A57t",
+    .build_fingerprint = "OPPO/A57t/A57:6.0.1/MMB29M/1527754036:user/release-keys",
+    .build_description = "msm8937_64-user 6.0.1 MMB29M eng.root.20191205.101424 dev-keys",
+    .build_ota = "A57t_11.A.22_0220_201912050917",
+};
+
 static const variant_info_t cph1701_info = {
     .brand = "OPPO",
     .device = "CPH1701",
@@ -51,7 +61,20 @@ static void determine_device() {
         switch (ReadOperatorName()) {
             /* China */
             case 8:
-                set_variant_props(a57_info);
+                switch (ReadPcbVersion()) {
+                    /* 16062 -> A57t */
+                    case 3:
+                    case 5:
+                    case 10:
+                    case 11:
+                        set_variant_props(a57t_info);
+                        break;
+
+                    /* 16061 -> A57 */
+                    default:
+                        set_variant_props(a57_info);
+                        break;
+                }
                 break;
 
             /* Global */
