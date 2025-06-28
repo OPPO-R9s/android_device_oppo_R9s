@@ -73,7 +73,7 @@ static void determine_device() {
                 if (ReadFileToString("/dev/block/bootdevice/by-name/reserve_exp1", &reserve_exp1)) {
                     if (!strncmp(reserve_exp1.c_str(), "00010001", 8)) {
                         set_variant_props(cph1701fw_info);
-                        return;
+                        break;
                     }
                 }
                 set_variant_props(cph1701_info);
