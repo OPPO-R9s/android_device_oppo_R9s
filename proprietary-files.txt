@@ -425,5 +425,6 @@ system/bin/rmt_storage:vendor/bin/rmt_storage|a13e246259eb1e5f56668428cb6951d8a7
 vendor/lib64/libqmiservices.so:vendor/lib64/libQmiservices.so|94c393eef69fe7bbc52efb1804163147c060f912
 vendor/lib64/libril-qc-qmi-1.so|918117daaa09056970d21ec37698a8447f09dffd|f94928c47fd903349ed696ed1d5c01f7031a686c
 
-# Sensors config - from CPH1701
-system/etc/sensors/sensor_def_16061.conf:vendor/etc/sensors/sensor_def_qcomdev.conf|ff046f6a8a6b2a2e1b47c10e6985ce78ee8e9f92
+# Sensors config
+system/etc/sensors/sensor_def_16017.conf:vendor/etc/sensor_def/16017/sensor_def_qcomdev.conf
+system/etc/sensors/sensor_def_16027.conf:vendor/etc/sensor_def/16027/sensor_def_qcomdev.conf
