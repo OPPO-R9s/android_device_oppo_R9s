@@ -27,7 +27,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Input
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/keylayout/oppo_touchscreen.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/oppo_touchscreen.kl
+    $(DEVICE_PATH)/keylayout/synaptics,s1302.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics,s1302.kl
 
 # Rootdir
 PRODUCT_PACKAGES += \
