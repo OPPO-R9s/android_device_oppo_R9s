@@ -16,100 +16,95 @@
 
 using android::base::ReadFileToString;
 
-static const variant_info_t a57_info = {
+static const variant_info_t r9s_info = {
     .brand = "OPPO",
-    .device = "A57",
-    .marketname = "OPPO A57",
-    .model = "OPPO A57",
-    .build_fingerprint = "OPPO/A57/A57:6.0.1/MMB29M/1527754036:user/release-keys",
-    .build_description = "msm8937_64-user 6.0.1 MMB29M eng.root.20191205.095236 dev-keys",
-    .build_ota = "A57_11.A.32_0320_201912050917",
+    .device = "R9s",
+    .marketname = "OPPO R9s",
+    .model = "OPPO R9s",
+    .build_fingerprint = "OPPO/R9s/R9s:7.1.1/NMF26F/1554707829:user/release-keys",
+    .build_description = "msm8953_64-user 7.1.1 NMF26F eng.root.20190413.183814 release-keys",
+    .build_ota = "R9s_11.A.53_0530_201904131805",
 };
 
-static const variant_info_t a57t_info = {
+static const variant_info_t r9sk_info = {
     .brand = "OPPO",
-    .device = "A57",
-    .marketname = "OPPO A57t",
-    .model = "OPPO A57t",
-    .build_fingerprint = "OPPO/A57t/A57:6.0.1/MMB29M/1527754036:user/release-keys",
-    .build_description = "msm8937_64-user 6.0.1 MMB29M eng.root.20191205.101424 dev-keys",
-    .build_ota = "A57t_11.A.22_0220_201912050917",
+    .device = "R9s",
+    .marketname = "OPPO R9sk",
+    .model = "OPPO R9sk",
+    .build_fingerprint = "OPPO/R9sk/R9sk:7.1.1/NMF26F/1554707882:user/release-keys",
+    .build_description = "msm8953_64-user 7.1.1 NMF26F eng.root.20190413.183814 release-keys",
+    .build_ota = "R9s_11.A.53_0530_201904131805",
 };
 
-static const variant_info_t cph1701_info = {
+static const variant_info_t cph1607_info = {
     .brand = "OPPO",
-    .device = "CPH1701",
-    .marketname = "OPPO A57",
-    .model = "CPH1701",
-    .build_fingerprint = "Android/msm8937_64/msm8937_64:6.0.1/MMB29M/root10091402:user/release-keys",
-    .build_description = "msm8937_64-user 6.0.1 MMB29M eng.root.20181009.140111 release-keys",
-    .build_ota = "CPH1701EX_11.A.36_INT_036_201810091339",
-};
-
-static const variant_info_t cph1701fw_info = {
-    .brand = "OPPO",
-    .device = "CPH1701fw",
-    .marketname = "OPPO A57",
-    .model = "CPH1701fw",
-    .build_fingerprint = "Android/msm8937_64/msm8937_64:6.0.1/MMB29M/root10091402:user/release-keys",
-    .build_description = "msm8937_64-user 6.0.1 MMB29M eng.root.20181009.140111 release-keys",
-    .build_ota = "CPH1701EX_11.A.36_INT_036_201810091339",
+    .device = "CPH1607",
+    .marketname = "OPPO R9s",
+    .model = "CPH1607",
+    .build_fingerprint = "Android/msm8953_64/msm8953_64:6.0.1/MMB29M/414:user/release-keys",
+    .build_description = "msm8953_64-user 6.0.1 MMB29M 414 release-keys",
+    .build_ota = "CPH1607EX_11.A.25_INT_025_201904251742",
 };
 
 static void determine_device() {
-    if (ReadProjectVersion() == 16061) {
+    if (ReadProjectVersion() == 16017) {
+        bool isGlobal = false;
+
         switch (ReadOperatorName()) {
             /* China */
             case 8:
-                switch (ReadPcbVersion()) {
-                    /* 16062 -> A57t */
-                    case 3:
-                    case 5:
-                    case 10:
-                    case 11:
-                        set_variant_props(a57t_info);
-                        break;
-
-                    /* 16061 -> A57 */
-                    default:
-                        set_variant_props(a57_info);
-                        break;
-                }
+                set_variant_props(r9s_info);
                 break;
 
             /* Global */
             case 102:
+            case 103:
             case 106:
-            case 110:
-            case 111:
-            case 112:
-            case 113:
-            case 114:
-            {
-                std::string reserve_exp1;
-                if (ReadFileToString("/dev/block/bootdevice/by-name/reserve_exp1", &reserve_exp1)) {
-                    if (!strncmp(reserve_exp1.c_str(), "00010001", 8)) {
-                        set_variant_props(cph1701fw_info);
-                        break;
-                    }
-                }
-                set_variant_props(cph1701_info);
+            case 107:
+            case 108:
+            case 109:
+                isGlobal = true;
+                set_variant_props(cph1607_info);
                 break;
-            }
 
             default:
-                LOG(WARNING) << "Unknown operator variant, setting A57";
-                set_variant_props(a57_info);
+                LOG(WARNING) << "Unknown operator variant, setting R9s";
+                set_variant_props(r9s_info);
                 break;
         }
 
+        if (isGlobal) {
+            switch (ReadOperatorName()) {
+                case 103:
+                case 107:
+                case 109:
+                    property_override("ro.vendor.wlan_fw_variant", "16317_second");
+                    break;
+                default: /* 102, 106, 108 */
+                    property_override("ro.vendor.wlan_fw_variant", "16317");
+                    break;
+            }
+        } else {
+            switch (ReadPcbVersion()) {
+                case 4:
+                case 5:
+                    property_override("ro.vendor.wlan_fw_variant", "16017_second");
+                    break;
+                default:
+                    property_override("ro.vendor.wlan_fw_variant", "16017");
+                    break;
+            }
+        }
+    } else if (ReadProjectVersion() == 16027) {
+        // Not released globally?
+        set_variant_props(r9sk_info);
+
         switch (ReadPcbVersion()) {
-            case 10:
-            case 11:
-                property_override("ro.vendor.wlan_fw_variant", "16061_second");
+            case 4:
+                property_override("ro.vendor.wlan_fw_variant", "16027_second");
                 break;
             default:
-                property_override("ro.vendor.wlan_fw_variant", "16061");
+                property_override("ro.vendor.wlan_fw_variant", "16027");
                 break;
         }
     } else {
