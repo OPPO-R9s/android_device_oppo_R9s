@@ -4,8 +4,20 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-on property:ro.vendor.wlan_fw_variant=16061
-    mount overlay overlay /vendor/firmware/wlan/prima ro lowerdir=/vendor/firmware/wlan/16061:/vendor/firmware/wlan/prima
+on property:ro.vendor.wlan_fw_variant=16017
+    mount overlay overlay /vendor/firmware/wlan/prima ro lowerdir=/vendor/firmware/wlan/16017:/vendor/firmware/wlan/prima
 
-on property:ro.vendor.wlan_fw_variant=16061_second
-    mount overlay overlay /vendor/firmware/wlan/prima ro lowerdir=/vendor/firmware/wlan/16061_second:/vendor/firmware/wlan/prima
+on property:ro.vendor.wlan_fw_variant=16017_second
+    mount overlay overlay /vendor/firmware/wlan/prima ro lowerdir=/vendor/firmware/wlan/16017_second:/vendor/firmware/wlan/prima
+
+on property:ro.vendor.wlan_fw_variant=16027
+    mount overlay overlay /vendor/firmware/wlan/prima ro lowerdir=/vendor/firmware/wlan/16027:/vendor/firmware/wlan/prima
+
+on property:ro.vendor.wlan_fw_variant=16027_second
+    mount overlay overlay /vendor/firmware/wlan/prima ro lowerdir=/vendor/firmware/wlan/16027_second:/vendor/firmware/wlan/prima
+
+on property:ro.vendor.wlan_fw_variant=16317
+    mount overlay overlay /vendor/firmware/wlan/prima ro lowerdir=/vendor/firmware/wlan/16317:/vendor/firmware/wlan/prima
+
+on property:ro.vendor.wlan_fw_variant=16317_second
+    mount overlay overlay /vendor/firmware/wlan/prima ro lowerdir=/vendor/firmware/wlan/16317_second:/vendor/firmware/wlan/prima

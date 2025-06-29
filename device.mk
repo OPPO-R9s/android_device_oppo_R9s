@@ -39,8 +39,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
-    $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv_16061.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/16061/WCNSS_qcom_wlan_nv.bin \
-    $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv_16061_second.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/16061_second/WCNSS_qcom_wlan_nv.bin
+    $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv_16017.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/16017/WCNSS_qcom_wlan_nv.bin \
+    $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv_16017_second.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/16017_second/WCNSS_qcom_wlan_nv.bin \
+    $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv_16027.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/16027/WCNSS_qcom_wlan_nv.bin \
+    $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv_16027_second.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/16027_second/WCNSS_qcom_wlan_nv.bin \
+    $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv_16317.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/16317/WCNSS_qcom_wlan_nv.bin \
+    $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv_16317_second.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/16317_second/WCNSS_qcom_wlan_nv.bin
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/oppo/R9s/R9s-vendor.mk)
