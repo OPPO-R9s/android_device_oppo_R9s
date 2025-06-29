@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# WLAN NV firmware
 on property:ro.vendor.wlan_fw_variant=16017
     mount overlay overlay /vendor/firmware/wlan/prima ro lowerdir=/vendor/firmware/wlan/16017:/vendor/firmware/wlan/prima
 
@@ -21,3 +22,10 @@ on property:ro.vendor.wlan_fw_variant=16317
 
 on property:ro.vendor.wlan_fw_variant=16317_second
     mount overlay overlay /vendor/firmware/wlan/prima ro lowerdir=/vendor/firmware/wlan/16317_second:/vendor/firmware/wlan/prima
+
+# ACDB calibration files
+on property:ro.vendor.acdb_cal_variant=16017
+    mount overlay overlay /vendor/etc/acdbdata/MTP ro lowerdir=/vendor/etc/acdbdata/16017:/vendor/etc/acdbdata/MTP
+
+on property:ro.vendor.acdb_cal_variant=16027
+    mount overlay overlay /vendor/etc/acdbdata/MTP ro lowerdir=/vendor/etc/acdbdata/16027:/vendor/etc/acdbdata/MTP

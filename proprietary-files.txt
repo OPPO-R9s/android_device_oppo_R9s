@@ -1,14 +1,21 @@
-# All unpinned blobs below are extracted from A57_11.A.32_0320_201912050917
+# All unpinned blobs below are extracted from R9s_11.A.53_0530_201904131805
 # CPH1701 Package version: CPH1701EX_11_A.36_181009
 
-# ACDB - from CPH1701
-system/etc/acdbdata/16061/Bluetooth_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb|850d4fa7ba66145bb4efc713d3c2bf78d4ef5df2
-system/etc/acdbdata/16061/General_cal.acdb:vendor/etc/acdbdata/MTP/MTP_General_cal.acdb|0d604afc047b080dcbb1043506e2d020853c3ad1
-system/etc/acdbdata/16061/Global_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb|8e3421f309963ce1b218a5b391a04b62a2ce536c
-system/etc/acdbdata/16061/Handset_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb|81c1866bafdcd461c8b10e181126609844e15b53
-system/etc/acdbdata/16061/Hdmi_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb|278f402966b7a312f8b0f77285b164ea11ff63d7
-system/etc/acdbdata/16061/Headset_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb|ce9344781197c7df70e2e7c665a4cb1d8ebebd55
-system/etc/acdbdata/16061/Speaker_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb|fe2289bbae4ed781493d1037dfbd78f3e3de552c
+# ACDB
+system/etc/acdbdata/16017/Bluetooth_cal.acdb:vendor/etc/acdbdata/16017/MTP_Bluetooth_cal.acdb
+system/etc/acdbdata/16017/General_cal.acdb:vendor/etc/acdbdata/16017/MTP_General_cal.acdb
+system/etc/acdbdata/16017/Global_cal.acdb:vendor/etc/acdbdata/16017/MTP_Global_cal.acdb
+system/etc/acdbdata/16017/Handset_cal.acdb:vendor/etc/acdbdata/16017/MTP_Handset_cal.acdb
+system/etc/acdbdata/16017/Hdmi_cal.acdb:vendor/etc/acdbdata/16017/MTP_Hdmi_cal.acdb
+system/etc/acdbdata/16017/Headset_cal.acdb:vendor/etc/acdbdata/16017/MTP_Headset_cal.acdb
+system/etc/acdbdata/16017/Speaker_cal.acdb:vendor/etc/acdbdata/16017/MTP_Speaker_cal.acdb
+system/etc/acdbdata/16027/Bluetooth_cal.acdb:vendor/etc/acdbdata/16027/MTP_Bluetooth_cal.acdb
+system/etc/acdbdata/16027/General_cal.acdb:vendor/etc/acdbdata/16027/MTP_General_cal.acdb
+system/etc/acdbdata/16027/Global_cal.acdb:vendor/etc/acdbdata/16027/MTP_Global_cal.acdb
+system/etc/acdbdata/16027/Handset_cal.acdb:vendor/etc/acdbdata/16027/MTP_Handset_cal.acdb
+system/etc/acdbdata/16027/Hdmi_cal.acdb:vendor/etc/acdbdata/16027/MTP_Hdmi_cal.acdb
+system/etc/acdbdata/16027/Headset_cal.acdb:vendor/etc/acdbdata/16027/MTP_Headset_cal.acdb
+system/etc/acdbdata/16027/Speaker_cal.acdb:vendor/etc/acdbdata/16027/MTP_Speaker_cal.acdb
 
 # Camera
 system/bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon

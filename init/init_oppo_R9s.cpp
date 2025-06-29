@@ -49,6 +49,7 @@ static const variant_info_t cph1607_info = {
 static void determine_device() {
     if (ReadProjectVersion() == 16017) {
         bool isGlobal = false;
+        property_override("ro.vendor.acdb_cal_variant", "16017");
 
         switch (ReadOperatorName()) {
             /* China */
@@ -98,6 +99,7 @@ static void determine_device() {
     } else if (ReadProjectVersion() == 16027) {
         // Not released globally?
         set_variant_props(r9sk_info);
+        property_override("ro.vendor.acdb_cal_variant", "16027");
 
         switch (ReadPcbVersion()) {
             case 4:
