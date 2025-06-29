@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_A57.mk
+    $(LOCAL_DIR)/lineage_R9s.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_A57-user \
-    lineage_A57-userdebug \
-    lineage_A57-eng
+    lineage_R9s-user \
+    lineage_R9s-userdebug \
+    lineage_R9s-eng

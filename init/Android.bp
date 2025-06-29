@@ -5,8 +5,8 @@
 //
 
 cc_library_static {
-    name: "init_oppo_A57",
-    srcs: ["init_oppo_A57.cpp"],
+    name: "init_oppo_R9s",
+    srcs: ["init_oppo_R9s.cpp"],
     whole_static_libs: ["//device/oppo/thortanium-common:libinit_oppo_thortanium"],
     include_dirs: [
         "system/libbase/include",

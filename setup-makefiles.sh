@@ -17,7 +17,7 @@
 
 set -e
 
-export DEVICE=A57
+export DEVICE=R9s
 export DEVICE_COMMON=thortanium-common
 export VENDOR=oppo
 export VENDOR_COMMON=${VENDOR}

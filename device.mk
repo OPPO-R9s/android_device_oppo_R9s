@@ -4,10 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/oppo/A57
+DEVICE_PATH := device/oppo/R9s
 
 # Inherit from the common device configuration.
-TARGET_OPPO_PLATFORM := msm8937
+TARGET_OPPO_PLATFORM := msm8953
 $(call inherit-product, device/oppo/thortanium-common/thortanium.mk)
 
 # Overlays
@@ -19,11 +19,11 @@ PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
 
 # Screen density
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
 
 # Device uses high-density artwork where available
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -43,4 +43,4 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv_16061_second.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/16061_second/WCNSS_qcom_wlan_nv.bin
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/oppo/A57/A57-vendor.mk)
+$(call inherit-product, vendor/oppo/R9s/R9s-vendor.mk)
