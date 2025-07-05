@@ -11,11 +11,8 @@ function blob_fixup() {
         vendor/bin/rmt_storage)
             # Drop IO priority set-up
             sed -i "s|\xe0\x0f\x1f\x32|\x0e\x00\x00\x14|g" "${2}"
-
-            # Update setgroups to fix wake locks
-            sed -i "s|\x88\x77\xc1\xd2\x08\x7d\x80\xf2|\x08\x7d\x80\xd2\x48\x78\xc1\xf2|g" "${2}"
             ;;
-        vendor/lib64/hw/fingerprint.msm8937.so)
+        vendor/lib64/hw/fingerprint.msm8953.so)
             "${PATCHELF}" --add-needed "libbinder_shim.so" "${2}"
             ;;
         vendor/lib64/libalipay_factory.so|vendor/lib64/lib_fpc_tac_shared.so)
@@ -36,7 +33,7 @@ function blob_fixup() {
             sed -i "s|libandroid.so|libcamshim.so|g" "${2}"
             "${PATCHELF}" --replace-needed "libgui.so" "libgui_vendor.so" "${2}"
             ;;
-        vendor/lib/libchromaflash.so|vendor/lib/liboptizoom.so|vendor/lib/libmmcamera_hdr_gb_lib.so|vendor/lib/libts_detected_face_hal.so|vendor/lib/libts_face_beautify_hal.so|vendor/lib/libseemore.so|vendor/lib/libtrueportrait.so|vendor/lib/libubifocus.so)
+        vendor/lib/libchromaflash.so|vendor/lib/liboptizoom.so|vendor/lib/libmmcamera_hdr_gb_lib.so|vendor/lib/libts_detected_face_hal.so|vendor/lib/libts_face_beautify_hal.so|vendor/lib/libseemore.so|vendor/lib/libSonyIMX298PdafLibrary.so|vendor/lib/libSonyIMX371RmscLibrary.so|vendor/lib/libtrueportrait.so|vendor/lib/libubifocus.so|vendor/lib/libVDHDRAPI.so)
             "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
             ;;
         vendor/lib64/libremosaiclib.so|vendor/lib64/libremosaic_tuning.so)
