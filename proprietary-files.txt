@@ -16,6 +16,10 @@ system/etc/acdbdata/16027/Hdmi_cal.acdb:vendor/etc/acdbdata/16027/MTP_Hdmi_cal.a
 system/etc/acdbdata/16027/Headset_cal.acdb:vendor/etc/acdbdata/16027/MTP_Headset_cal.acdb
 system/etc/acdbdata/16027/Speaker_cal.acdb:vendor/etc/acdbdata/16027/MTP_Speaker_cal.acdb
 
+# Audio firmware
+system/etc/firmware/tfa98xx_16017.cnt:vendor/firmware/tfa98xx_16017.cnt
+system/etc/firmware/tfa98xx_16027.cnt:vendor/firmware/tfa98xx_16027.cnt
+
 # Camera
 system/bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
 vendor/lib/libchromaflash.so

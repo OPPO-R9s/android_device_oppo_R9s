@@ -27,7 +27,9 @@ on property:ro.vendor.wlan_fw_variant=16317_second
 on property:ro.boot.product.hardware.sku=16017
     mount overlay overlay /vendor/etc/acdbdata/MTP ro lowerdir=/vendor/etc/acdbdata/16017:/vendor/etc/acdbdata/MTP
     mount overlay overlay /vendor/etc/sensors ro lowerdir=/vendor/etc/sensor_def/16017:/vendor/etc/sensors
+    write /sys/module/snd_soc_tfa98xx/parameters/fw_name tfa98xx_16017.cnt
 
 on property:ro.boot.product.hardware.sku=16027
     mount overlay overlay /vendor/etc/acdbdata/MTP ro lowerdir=/vendor/etc/acdbdata/16027:/vendor/etc/acdbdata/MTP
     mount overlay overlay /vendor/etc/sensors ro lowerdir=/vendor/etc/sensor_def/16027:/vendor/etc/sensors
+    write /sys/module/snd_soc_tfa98xx/parameters/fw_name tfa98xx_16027.cnt
