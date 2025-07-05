@@ -347,6 +347,12 @@ system/etc/firmware/a_fp.b05:vendor/firmware/a_fp.b05
 system/etc/firmware/a_fp.b06:vendor/firmware/a_fp.b06
 system/etc/firmware/a_fp.mdt:vendor/firmware/a_fp.mdt
 
+# Graphics firmware
+vendor/firmware/a506_zap.b00
+vendor/firmware/a506_zap.b01
+vendor/firmware/a506_zap.b02
+vendor/firmware/a506_zap.mdt
+
 # Radio
 system/bin/rmt_storage:vendor/bin/rmt_storage
 vendor/lib64/libqmiservices.so:vendor/lib64/libQmiservices.so
