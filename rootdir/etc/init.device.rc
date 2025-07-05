@@ -24,10 +24,10 @@ on property:ro.vendor.wlan_fw_variant=16317_second
     mount overlay overlay /vendor/firmware/wlan/prima ro lowerdir=/vendor/firmware/wlan/16317_second:/vendor/firmware/wlan/prima
 
 # Miscellaneous variant specific files
-on property:ro.vendor.unified_device_variant=16017
+on property:ro.boot.product.hardware.sku=16017
     mount overlay overlay /vendor/etc/acdbdata/MTP ro lowerdir=/vendor/etc/acdbdata/16017:/vendor/etc/acdbdata/MTP
     mount overlay overlay /vendor/etc/sensors ro lowerdir=/vendor/etc/sensor_def/16017:/vendor/etc/sensors
 
-on property:ro.vendor.unified_device_variant=16027
+on property:ro.boot.product.hardware.sku=16027
     mount overlay overlay /vendor/etc/acdbdata/MTP ro lowerdir=/vendor/etc/acdbdata/16027:/vendor/etc/acdbdata/MTP
     mount overlay overlay /vendor/etc/sensors ro lowerdir=/vendor/etc/sensor_def/16027:/vendor/etc/sensors
