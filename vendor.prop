@@ -1,2 +1,5 @@
 # SoC
 ro.soc.model=MSM8953
+
+# USB
+vendor.usb.controller=7000000.dwc3
