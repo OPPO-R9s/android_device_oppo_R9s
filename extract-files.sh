@@ -13,7 +13,7 @@ function blob_fixup() {
             sed -i "s|\xe0\x0f\x1f\x32|\x0e\x00\x00\x14|g" "${2}"
             ;;
         vendor/lib64/hw/fingerprint.msm8953.so)
-            "${PATCHELF}" --add-needed "libbinder_shim.so" "${2}"
+            "${PATCHELF_0_17_2}" --add-needed "libbinder_shim.so" "${2}"
             ;;
         vendor/lib64/libalipay_factory.so|vendor/lib64/lib_fpc_tac_shared.so)
             sed -i 's|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g' "${2}"

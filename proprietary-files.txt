@@ -1,4 +1,5 @@
 # All unpinned blobs below are extracted from R9s_11.A.53_0530_201904131805
+# CPH1607 Package version: CPH1607EX_11_A.25_190425
 
 # ACDB
 system/etc/acdbdata/16017/Bluetooth_cal.acdb:vendor/etc/acdbdata/16017/MTP_Bluetooth_cal.acdb
@@ -397,30 +398,30 @@ vendor/lib64/libremosaiclib.so
 vendor/lib64/libremosaic_daemon.so
 vendor/lib64/libremosaic_tuning.so
 
-# Fingerprint - FPC
-system/lib64/hw/fingerprint.msm8953.so:vendor/lib64/hw/fingerprint.msm8953.so
-system/lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so
-system/lib64/libalipay_factory.so:vendor/lib64/libalipay_factory.so
+# Fingerprint - FPC - from CPH1607
+system/lib64/hw/fingerprint.msm8953.so:vendor/lib64/hw/fingerprint.msm8953.so|ca68f21ef18e0b724db09eb769888ba4fa92bad6|0fc87c46217b29dd2c15698c6544a9fdaa1f0eb0
+system/lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so|b48dd01a3b99a8bc8330b6e4415c142880e922e6|040d844f882d445e9b10c7efbe48f5634f8cc280
+system/lib64/libalipay_factory.so:vendor/lib64/libalipay_factory.so|ace688575083ff4fac840370ce9340262be9d00d|018eaef5a3d076a8b0a7dadffbce774ad55ce404
 
-# Fingerprint - Alipay firmware
-system/etc/firmware/alipay.b00:vendor/firmware/alipay.b00
-system/etc/firmware/alipay.b01:vendor/firmware/alipay.b01
-system/etc/firmware/alipay.b02:vendor/firmware/alipay.b02
-system/etc/firmware/alipay.b03:vendor/firmware/alipay.b03
-system/etc/firmware/alipay.b04:vendor/firmware/alipay.b04
-system/etc/firmware/alipay.b05:vendor/firmware/alipay.b05
-system/etc/firmware/alipay.b06:vendor/firmware/alipay.b06
-system/etc/firmware/alipay.mdt:vendor/firmware/alipay.mdt
+# Fingerprint - Alipay firmware - from CPH1607
+system/etc/firmware/alipay.b00:vendor/firmware/alipay.b00|9dd173e4faceb2b276d4847dbb5b2a1f397de2e4
+system/etc/firmware/alipay.b01:vendor/firmware/alipay.b01|09f146171e8a672f70a2e3f4cc894260afcd3256
+system/etc/firmware/alipay.b02:vendor/firmware/alipay.b02|ac13241b11af39a17ae43fb420e51cd5bd8f5f96
+system/etc/firmware/alipay.b03:vendor/firmware/alipay.b03|4e686fa78b2d0bd5d0e7178eb021de5ff379d747
+system/etc/firmware/alipay.b04:vendor/firmware/alipay.b04|070ecacd3e7861002d2d52d474203a1e4bd1a937
+system/etc/firmware/alipay.b05:vendor/firmware/alipay.b05|648187fbf1a063bb4a637d99b2866c057ba99fcf
+system/etc/firmware/alipay.b06:vendor/firmware/alipay.b06|aaa8b57e75a45ec6193d18a601f7115613072b79
+system/etc/firmware/alipay.mdt:vendor/firmware/alipay.mdt|71c32fe501ee2c455a4aeec1b62d9bb2cfc7d048
 
-# Fingerprint - FPC firmware
-system/etc/firmware/a_fp.b00:vendor/firmware/a_fp.b00
-system/etc/firmware/a_fp.b01:vendor/firmware/a_fp.b01
-system/etc/firmware/a_fp.b02:vendor/firmware/a_fp.b02
-system/etc/firmware/a_fp.b03:vendor/firmware/a_fp.b03
-system/etc/firmware/a_fp.b04:vendor/firmware/a_fp.b04
-system/etc/firmware/a_fp.b05:vendor/firmware/a_fp.b05
-system/etc/firmware/a_fp.b06:vendor/firmware/a_fp.b06
-system/etc/firmware/a_fp.mdt:vendor/firmware/a_fp.mdt
+# Fingerprint - FPC firmware - from CPH1607
+system/etc/firmware/fingerprint.b00:vendor/firmware/fingerprint.b00|22912d59d481d844b58079ed32a7e90af8a1bcaa
+system/etc/firmware/fingerprint.b01:vendor/firmware/fingerprint.b01|bb8389b6114f0f95aa08bfd179bc15b4661bc47a
+system/etc/firmware/fingerprint.b02:vendor/firmware/fingerprint.b02|b7f8565c88f65d0a974c52ba5edf921ece9625c5
+system/etc/firmware/fingerprint.b03:vendor/firmware/fingerprint.b03|f5fb7954df0af21f55ac00769c400c0ff90b9420
+system/etc/firmware/fingerprint.b04:vendor/firmware/fingerprint.b04|d4924a57836d062463aa4caaa497669f03de372c
+system/etc/firmware/fingerprint.b05:vendor/firmware/fingerprint.b05|74a2339683cb21e20267c092900ad9c942b816a7
+system/etc/firmware/fingerprint.b06:vendor/firmware/fingerprint.b06|341f188722aab317d78fdbdfdd0fbe52b2c0f25f
+system/etc/firmware/fingerprint.mdt:vendor/firmware/fingerprint.mdt|e73cf6ca3b5980112cb32180b5a3ef8dbe1ef03e
 
 # Graphics firmware
 vendor/firmware/a506_zap.b00
