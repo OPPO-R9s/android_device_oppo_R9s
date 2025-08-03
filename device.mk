@@ -45,7 +45,7 @@ PRODUCT_PACKAGES += \
     TargetWifiOverlay
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
+    $(DEVICE_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini \
     $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv_16017.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/16017/WCNSS_qcom_wlan_nv.bin \
     $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv_16017_second.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/16017_second/WCNSS_qcom_wlan_nv.bin \
     $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv_16027.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/16027/WCNSS_qcom_wlan_nv.bin \
