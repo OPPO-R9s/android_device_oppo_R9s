@@ -14,9 +14,11 @@ if [ $project_ver = 16017 ]; then # OPPO R9s
     # Set separate soft property
     setprop ro.separate.soft 16017
 
-    # WiFi NV
-    if [ $operator_name = 8 ]; then
-        # China
+    if [ $operator_name = 8 ]; then # China
+        # IMEI SV
+        setprop ro.vendor.radio.imei.sv 53
+
+        # WiFi NV
         case $pcb_version in
             "4" | "5" )
                 setprop ro.vendor.wifi.nv 16017_second
@@ -25,8 +27,11 @@ if [ $project_ver = 16017 ]; then # OPPO R9s
                 setprop ro.vendor.wifi.nv 16017
                 ;;
         esac
-    else
-        # Global
+    else # Global
+        # IMEI SV
+        setprop ro.vendor.radio.imei.sv 25
+
+        # WiFi NV
         case $operator_name in
             "103" | "107" | "109" )
                 setprop ro.vendor.wifi.nv 16317_second
@@ -39,6 +44,9 @@ if [ $project_ver = 16017 ]; then # OPPO R9s
 elif [ $project_ver = 16027 ]; then # OPPO R9sk
     # Set separate soft property
     setprop ro.separate.soft 16027
+
+    # IMEI SV
+    setprop ro.vendor.radio.imei.sv 53
 
     # WiFi NV
     # China (device not released globally?)

@@ -23,7 +23,6 @@ static const variant_info_t r9s_info = {
     .model = "OPPO R9s",
     .build_fingerprint = "OPPO/R9s/R9s:7.1.1/NMF26F/1554707829:user/release-keys",
     .build_description = "msm8953_64-user 7.1.1 NMF26F eng.root.20190413.183814 release-keys",
-    .imei_sv = 53,
 };
 
 static const variant_info_t r9sk_info = {
@@ -33,7 +32,6 @@ static const variant_info_t r9sk_info = {
     .model = "OPPO R9sk",
     .build_fingerprint = "OPPO/R9sk/R9sk:7.1.1/NMF26F/1554707882:user/release-keys",
     .build_description = "msm8953_64-user 7.1.1 NMF26F eng.root.20190413.183814 release-keys",
-    .imei_sv = 53,
 };
 
 static const variant_info_t cph1607_info = {
@@ -43,7 +41,6 @@ static const variant_info_t cph1607_info = {
     .model = "CPH1607",
     .build_fingerprint = "Android/msm8953_64/msm8953_64:6.0.1/MMB29M/414:user/release-keys",
     .build_description = "msm8953_64-user 6.0.1 MMB29M 414 release-keys",
-    .imei_sv = 25,
 };
 
 static void determine_device() {
