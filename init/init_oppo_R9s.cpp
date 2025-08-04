@@ -48,9 +48,6 @@ static const variant_info_t cph1607_info = {
 
 static void determine_device() {
     if (ReadProjectVersion() == 16017) {
-        bool isGlobal = false;
-        property_override("ro.boot.product.hardware.sku", "16017");
-
         switch (ReadOperatorName()) {
             /* China */
             case 8:
@@ -64,7 +61,6 @@ static void determine_device() {
             case 107:
             case 108:
             case 109:
-                isGlobal = true;
                 set_variant_props(cph1607_info);
                 break;
 
@@ -73,42 +69,9 @@ static void determine_device() {
                 set_variant_props(r9s_info);
                 break;
         }
-
-        if (isGlobal) {
-            switch (ReadOperatorName()) {
-                case 103:
-                case 107:
-                case 109:
-                    property_override("ro.vendor.wlan_fw_variant", "16317_second");
-                    break;
-                default: /* 102, 106, 108 */
-                    property_override("ro.vendor.wlan_fw_variant", "16317");
-                    break;
-            }
-        } else {
-            switch (ReadPcbVersion()) {
-                case 4:
-                case 5:
-                    property_override("ro.vendor.wlan_fw_variant", "16017_second");
-                    break;
-                default:
-                    property_override("ro.vendor.wlan_fw_variant", "16017");
-                    break;
-            }
-        }
     } else if (ReadProjectVersion() == 16027) {
         // Not released globally?
         set_variant_props(r9sk_info);
-        property_override("ro.boot.product.hardware.sku", "16027");
-
-        switch (ReadPcbVersion()) {
-            case 4:
-                property_override("ro.vendor.wlan_fw_variant", "16027_second");
-                break;
-            default:
-                property_override("ro.vendor.wlan_fw_variant", "16027");
-                break;
-        }
     } else {
         LOG(ERROR) << "Unknown device variant";
     }

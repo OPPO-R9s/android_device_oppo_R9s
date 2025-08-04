@@ -38,7 +38,8 @@ PRODUCT_COPY_FILES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init.device.rc
+    init.device.rc \
+    init.device.sh
 
 # Wifi
 PRODUCT_PACKAGES += \
