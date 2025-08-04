@@ -431,8 +431,10 @@ vendor/firmware/a506_zap.mdt
 
 # Radio
 system/bin/rmt_storage:vendor/bin/rmt_storage
-vendor/lib64/libqmiservices.so:vendor/lib64/libQmiservices.so
-vendor/lib64/libril-qc-qmi-1.so
+
+# Radio - from CPH1607
+vendor/lib64/libqmiservices.so:vendor/lib64/libQmiservices.so|329bd9ac24bf6faf013c5dff1af3525a31fbb13f
+vendor/lib64/libril-qc-qmi-1.so|0914338c263c627f136d633f606a6baa19f1e936|038681199669b32935eda4de41d700cda414f4c6
 
 # Sensors config
 system/etc/sensors/sensor_def_16017.conf:vendor/etc/sensor_def/16017/sensor_def_qcomdev.conf
