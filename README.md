@@ -21,3 +21,12 @@ It was announced on October, 2016.
 | Release Date            | October 2016                      |
 
 ![OPPO R9s](https://assorted.downloads.oppo.com/static/assets/images/products/r9s/m/sec-1-mobile-ea460caa3d85ad3df01baa3e1aeeac6f40b5edbd.jpg "OPPO R9s")
+
+# How to build：
+```
+. build/envsetup.sh 
+repopick -f 398578
+repopick -f 397516
+breakfast R9s
+brunch R9s
+```
