@@ -1,0 +1,24 @@
+//
+// Copyright (C) 2025 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc_xml {
+    name: "R9s_camera_config.xml",
+
+    required: [
+        "imx298_chromatix.xml",
+        "imx298_sunny_chromatix.xml",
+        "imx398_chromatix.xml",
+        "imx398_sunny_chromatix.xml",
+        "s5k3p3sp_chromatix.xml",
+        "s5k3p8_chromatix.xml",
+        "s5k3p8sp_chromatix.xml",
+        "s5k3p8sp_truly_chromatix.xml",
+    ],
+    src: "camera_config.xml",
+    relative_install_path: "camera",
+    filename_from_src: true,
+    soc_specific: true,
+}

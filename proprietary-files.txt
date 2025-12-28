@@ -323,17 +323,6 @@ vendor/lib/libchromatix_s5k3p8sp_snapshot_otherapk.so|3b204813e893e1f20af762ad58
 vendor/lib/libchromatix_s5k3p8sp_snapshot_otherapk_remosaic.so|364d05f5010d6ab19a975485e82145bb29128b07
 vendor/lib/libchromatix_s5k3p8sp_snapshot_wchat.so|2bcf0be20e0c512ca52acff35b85217ebc04f06a
 
-# Camera configs
-system/etc/camera/camera_config.xml:vendor/etc/camera/camera_config.xml
-system/etc/camera/imx298_chromatix.xml:vendor/etc/camera/imx298_chromatix.xml
-system/etc/camera/imx298_sunny_chromatix.xml:vendor/etc/camera/imx298_sunny_chromatix.xml
-system/etc/camera/imx398_chromatix.xml:vendor/etc/camera/imx398_chromatix.xml
-system/etc/camera/imx398_sunny_chromatix.xml:vendor/etc/camera/imx398_sunny_chromatix.xml
-system/etc/camera/s5k3p3sp_chromatix.xml:vendor/etc/camera/s5k3p3sp_chromatix.xml
-system/etc/camera/s5k3p8_chromatix.xml:vendor/etc/camera/s5k3p8_chromatix.xml
-system/etc/camera/s5k3p8sp_chromatix.xml:vendor/etc/camera/s5k3p8sp_chromatix.xml
-system/etc/camera/s5k3p8sp_truly_chromatix.xml:vendor/etc/camera/s5k3p8sp_truly_chromatix.xml
-
 # Camera eeproms - from A57
 vendor/lib/libmmcamera_eeprom_util.so|7dcea9c02152cb494ce7c020bb10f52e9bd5da05
 vendor/lib/libmmcamera_m24c64s_eeprom.so|91b2b68d9c5bfb86ec146b0151ab7b7809d6f1b0

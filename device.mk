@@ -31,6 +31,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
     $(DEVICE_PATH)/audio/mixer_paths_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_mtp.xml
 
+# Camera
+PRODUCT_PACKAGES += \
+    R9s_camera_config.xml
+
 # Input
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/keylayout/synaptics_s1302.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_s1302.kl \
