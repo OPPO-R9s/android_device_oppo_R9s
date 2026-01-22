@@ -1,4 +1,4 @@
-Device tree for OPPO R9s (OPPO R9sk)
+Device tree for OPPO R9s & OPPO R9sk
 ===========================================
 
 The OPPO R9s (codenamed _"R9s"_) is a mid-range smartphone from OPPO.
@@ -11,7 +11,7 @@ It was announced on October, 2016.
 | GPU                     | Adreno 506                        |
 | Memory                  | 4 GB                              |
 | Shipped Android Version | 6.0.1                             |
-| Storage                 | 32 GB                             |
+| Storage                 | 64 GB                             |
 | MicroSD                 | Up to 256 GB                      |
 | Battery                 | 3010 mAh (non-removable)          |
 | Dimensions              | 153 x 74.3 x 6.6 mm               |
