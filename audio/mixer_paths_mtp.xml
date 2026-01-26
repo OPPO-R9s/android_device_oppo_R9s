@@ -89,7 +89,6 @@
     <ctl name="SpkrMono WSA_RDAC" value="ZERO" />
     <ctl name="SpkrMono BOOST Switch" value="1" />
     <ctl name="Speaker Boost" value="DISABLE" />
-    <ctl name="EAR PA Gain" value="POS_6_DB" />
     <ctl name="EAR PA Gain" value="POS_1P5_DB" />
     <ctl name="EAR PA Boost" value="DISABLE" />
     <ctl name="MI2S_RX Channels" value="One" />
@@ -144,7 +143,6 @@
     <ctl name="QUIN_MI2S_RX Audio Mixer MultiMedia12" value="0" />
     <ctl name="QUIN_MI2S_RX Audio Mixer MultiMedia13" value="0" />
     <ctl name="QUIN_MI2S_RX Audio Mixer MultiMedia14" value="0" />
-    <ctl name="QUAT_MI2S_RX Port Mixer INTERNAL_BT_SCO_TX" value="0" />
     <ctl name="QUAT_MI2S_RX Port Mixer INTERNAL_BT_SCO_TX" value="0" />
     <ctl name="mono Profile" value="0" />
     <ctl name="mono Music Playback Volume" value="0" />
