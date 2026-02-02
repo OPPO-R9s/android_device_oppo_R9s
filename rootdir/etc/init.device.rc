@@ -20,3 +20,15 @@ on early-init
     mount overlay overlay /vendor/etc/acdbdata/MTP ro lowerdir=/vendor/etc/acdbdata/${ro.separate.soft}:/vendor/etc/acdbdata/MTP
     mount overlay overlay /vendor/etc/sensors ro lowerdir=/vendor/etc/sensor_def/${ro.separate.soft}:/vendor/etc/sensors
     write /sys/module/snd_soc_tfa98xx/parameters/fw_name tfa98xx_${ro.separate.soft}.cnt
+
+# Modem
+service vendor.rmt_storage_global /vendor/bin/rmt_storage_global
+    class core
+    user root
+    shutdown critical
+    ioprio rt 0
+    disabled
+
+on property:init.svc.vendor.rmt_storage=running && property:ro.vendor.radio.region.global=true
+    stop vendor.rmt_storage
+    start vendor.rmt_storage_global

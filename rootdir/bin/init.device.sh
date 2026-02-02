@@ -40,6 +40,9 @@ if [ $project_ver = 16017 ]; then # OPPO R9s
                 setprop ro.vendor.wifi.nv 16317
                 ;;
         esac
+
+        # Modem
+        setprop ro.vendor.radio.region.global true
     fi
 elif [ $project_ver = 16027 ]; then # OPPO R9sk
     # Set separate soft property
