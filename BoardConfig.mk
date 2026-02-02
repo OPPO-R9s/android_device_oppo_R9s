@@ -18,9 +18,6 @@ TARGET_VENDOR_PARTITION := oem
 # Inherit from common device tree
 include device/oppo/thortanium-common/BoardConfigCommon.mk
 
-# Camera
-TARGET_BROKEN_REPROCESS_BACKEND := true
-
 # Display
 TARGET_SCREEN_DENSITY := 400
 
