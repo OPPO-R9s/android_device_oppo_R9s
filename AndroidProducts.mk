@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_R9s.mk
+    $(LOCAL_DIR)/spark_R9s.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_R9s-user \
-    lineage_R9s-userdebug \
-    lineage_R9s-eng
+    spark_R9s-user \
+    spark_R9s-userdebug \
+    spark_R9s-eng

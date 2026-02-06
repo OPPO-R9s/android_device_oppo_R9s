@@ -35,6 +35,7 @@ TARGET_KERNEL_CONFIG := lineageos_R9s_defconfig
 TARGET_KERNEL_RECOVERY_CONFIG := lineageos_R9s_recovery_defconfig
 
 # Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Security patch level
